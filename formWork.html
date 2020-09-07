@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formWorkCSS.css">
+    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title"> Trabalhe Conosco! </h1>
+    <h4> Preencha os dados abaixo e entraremos em contato. </h4>
+</head>
+
+<body>
+    <main>
+        <p id="description"> As informações contidas abaixo serão usadas para conhece-los melhor. Fique tranquilo e responda de maneira sincera, ninguém será julgado por isso. Boa sorte!</p>
+    </main>
+    <form id="survey-form">
+        <label id="name-label" for="name">Digite seu nome: </label>
+        <input type="text" id="name" name="name" placeholder="Nome" required> <br>
+        <label id="email-label" for="email">Endereço de email: </label>
+        <input type="email" id="email" name="email" placeholder="Email" required> <br>
+        <label id="number-label" for="number">Digite seu número: </label>
+        <input type="number" id="number" name="number" min="8" max="15" placeholder="Nº" required> <br>
+        <label id="dropdown" for="opcoes"> Escolha uma opção: </label>
+        <select id="dropdown">
+            <option value="manhã">Prefiro as manhãs</option>
+            <option value="tarde">Prefiro as tardes</option>
+            <option value="qualquer">Prefiro horários não definidos</option>
+        </select><br>
+        <p>Selecione suas habilidades!!</p>
+        <div class="formGroup">
+            <label id="thesame" for="samename">HTML</label>
+            <input type="checkbox" id="samename" value="html" name="programacao">
+            <label id="thesame-one" for="samename1">CSS</label>
+            <input type="checkbox" id="samename1" value="css" name="programacao">
+            <label id="thesame-two" for="samename2">JavaScript</label>
+            <input type="checkbox" id="samename2" value="js" name="programacao">
+            <label id="thesame-three" for="samename3">Java</label>
+            <input type="checkbox" id="samename3" value="java" name="programacao">
+            <label id="thesame-four" for="samename4">PHP</label>
+            <input type="checkbox" id="samename4" value="php" name="programacao">
+        </div>
+        <p>Como ficou sabendo da nossa vaga?</p>
+        <div class="formGroup">
+            <label id="job" for="thejob">Redes sociais</label>
+            <input type="radio" id="thejob" value="social" name="opportunity">
+            <label id="job1" for="thejob1">Amigos/indicação</label>
+            <input type="radio" id="thejob1" value="amigos" name="opportunity">
+            <label id="job2" for="thejob2">Outro</label>
+            <input type="radio" id="thejob2" value="outro" name="opportunity"><br>
+            <label for="textofinal">Deixe uma mensagem aqui:</label>
+        </div>
+        <textarea id="textofinal" rows="8" cols="60"></textarea><br>
+        <button id="submit" type="submit">Enviar</button>
+
+    </form>
+
+</body>
+
+</html>
